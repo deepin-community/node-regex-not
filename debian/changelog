@@ -1,5 +1,43 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-regex-not (1.0.2+~1.0.0-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+
+  [ lintian-brush ]
+  * Update standards version to 4.6.0, no changes needed.
+
+  [ Yadd ]
+  * Bump debhelper compatibility level to 13
+  * Modernize debian/watch
+    * Fix GitHub tags regex
+    * Fix filenamemangle
+  * Use dh-sequence-nodejs instead of pkg-js-tools
+  * Mark test dependencies with <!nocheck>
+  * Embed typescript declarations and repack
+
+ -- Yadd <yadd@debian.org>  Thu, 30 Dec 2021 09:46:31 +0100
+
+node-regex-not (1.0.2-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 1.0.2
+  * Bump Standards-Version to 4.4.1 (no changes needed)
+  * Drop compat file, rely on debhelper-compat and bump compat level to 12
+  * Use salsa.debian.org in Vcs-* fields
+  * Changed section in debian/control
+  * Fixed URL in debian/copyright
+  * Switch to pkg-js-tool auto install and test
+  * Added Rules-Requires-Root
+  * Added node-to-regex as Build-Depends
+  * Fix package wrt cme
+  * Run wrap-and-sort
+
+ -- Abhijith Sheheer <abhijithsheheer@gmail.com>  Sat, 14 Dec 2019 10:35:59 +0530
+
+node-regex-not (1.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #842241)
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 27 Oct 2016 16:13:07 +0530
