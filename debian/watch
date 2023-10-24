@@ -1,0 +1,10 @@
+version=4
+opts=\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-regex-not-$1/ \
+ https://github.com/jonschlinkert/regex-not/tags .*/archive/.*/v?([\d\.]+).tar.gz group
+
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,component=types-regex-not,ctype=nodejs,pgpmode=none,filenamemangle=s/^.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-types-regex-not-$1/" \
+ https://registry.npmjs.org/@types/regex-not https://registry.npmjs.org/@types/regex-not/-/regex-not-([\d\.]+)@ARCHIVE_EXT@ group
